@@ -1,0 +1,30 @@
+{
+  "run_id": "demo_timeout_S1",
+  "scenario_id": "S1",
+  "messages": [
+    {
+      "role": "system",
+      "content": "AGENT. Follow refund policy using tools."
+    },
+    {
+      "role": "user",
+      "content": "My order ORD-100048 reached me very late. I would like a refund."
+    }
+  ],
+  "max_iterations": 6,
+  "token_limit": 6000,
+  "time_limit_seconds": 0,
+  "elapsed_seconds": 0.0,
+  "llm_calls": 0,
+  "tokens_used": 0,
+  "step_number": 0,
+  "steps": [],
+  "tools_executed": [],
+  "result": {
+    "status": "FALLBACK_TIMEOUT",
+    "final_answer": "Human handoff: FALLBACK_TIMEOUT for S1; tools completed=0; last tool=none.",
+    "steps": [],
+    "llm_calls": 0,
+    "tokens_used": 0
+  }
+}
